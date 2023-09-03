@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(243, 234, 227, 1);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+
+.bg-image {
+    background-image: url(images/image-product-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 275px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-info {
+    width: 275px;
+    margin: 20px 15px;
+    position: relative;
+}
+
+.product-info #product {
+    text-transform: uppercase;
+    color: rgba(168, 168, 179, 1);
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.product-info h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 25px;
+}
+
+.product-info p {
+    color: rgba(168, 168, 179, 1);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.product-info strong {
+    color: rgba(61, 129, 104, 1);
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.product-info #price {
+    color: rgba(168, 168, 179, 1);
+    text-decoration: line-through;
+    position: absolute;
+    transform: translateY(80%);
+    font-weight: 500;
+}
+
+.product-info button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(61, 129, 104, 1);
+    color: #fff;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product-info button img {
+    margin-right: 10px
+}
+
+@media(min-width: 768px) {
+
+    body {
+        height: 100vh;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-image {
+        background-image: url(images/image-product-desktop.jpg);
+        background-origin: border-box;
+        background-size: cover;
+        width: 275px;
+        height: 450px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+
+    .product-info {
+        margin: 25px;
+    }
+
+    .product-info h1 {
+        font-size: 38px;
+    }
+}
